@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!-- iOS meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <style>html {font-family: Verdana, Geneva, Tahoma, sans-serif;}</style>
+    <title>Brain Scans</title>
+  </head>
+
+  <body>
+    <H1>Brain Scans</H1>
+    
+    An excellent source of technical information about MRI sequences is the <A HREF="https://www.mr-tip.com/serv1.php">MR-TIP website</A>.
+    <hr>
+
+    <H2> Structural (Anatomical) Images</H2>
+    <p>This is a T1w image: <A HREF="t1w.html"> T1w Image</A></p>
+    <p>You will usually acquire a T1-weighted structural (a.k.a anatomical) image.
+      It takes about 5 minutes and has voxels ~one-millimeter in each dimension (1 mm isotropic)
+      This is considered high resolution because it is much better than typical fMRI or DWI.
+    </p>
+    <p>This is a T1w image that has been defaced to protect the identity of the participant:
+      <A HREF="t1w_lesion_defaced.html"> Defaced T1w Image</A>
+    </p>
+    <p>HIPAA requires that you deidentify MRI data. One part of this process is defacing
+      (removing identifying features).  This is not the same as brain extraction.
+    </p>
+    <hr>
+
+    <p>This is a T2w image: <A HREF="t2w.html"> T2w Image</A></p>
+    <hr>
+
+    <p>This is a FLAIR image: <A HREF="flair.html"> FLAIR Image</A></p>
+    <hr>
+
+    <H2>4D Image Sequences</H2>
+    <p>This is a DWI image: <A HREF="dwi.html"> DWI Image</A></p>
+    <p>Diffusion images (a.k.a. DTI [Diffusion Tensor] or DWI [Diffusion Weighted] Images)
+      are used to examine the integrity of white matter. This one has 30 volumes,
+      each with a different gradient directions applied. It also includes two B0 (b-zero)
+      images, for a totoal of 32 volumes. B0 images have no gradients applied, They appear
+      as the first and last image in the sequence (and are much brighter than the images
+      with the gradients). This is probably the minimum you would want for research. 
+      If you double the number of directions, you'll also double the acquisition time! 
+      This sequence has 2 mm isotropic voxels and takes about 5 minutes to acquire. 
+      It was acquired with A-P (anterior to posterior) phase encoding, which is also pretty typical.  
+    </p>
+    <hr>
+
+    <p>This is an fMRI image: <A HREF="fmri.html"> fMRI Image</A></p>
+    <p>This resting state fMRI (functional magnetic resonance image). This one includes
+      177 volumes, repeated every 2 seconds (i.e., repetition time, TR, is 2 seconds). 
+      It takes about 6 minutes to acquire. Voxels are 2.5 x 2.5 x 3.5 mm, so they are
+      anisotropic (not the same in every dimension). It is often suggested that resting
+      state scans be longer, but it depends on whether your participants can hold still
+      and avoid going to sleep for a longer scan.</p>
+    <hr>
+
+    <H2>Field Maps</H2>
+    <p>
+      Field maps take about 1.5 minutes to acquire and are extremely useful for correcting
+      distortions in DTI or even fMRI sequences. A typical field map sequence on our Siemens
+      scanner includes two magnitude images and one phase image (like the lower one).
+      The voxels are 3 x 3 x 4 mm. Note: fmriprep will only find and use the field maps IF
+      there is an IntendedFor key and value in the accompanying JSON files for each fieldmap.
+      You can read more about the issue <A HREF="https://github.com/nipreps/fmriprep/issues/2312">here</A>.
+    </p>
+    <p>This is a Magnitude image: <A HREF="magnitude.html"> Magnitude Image</A></p>
+    <hr>
+
+    <p>This is a Phase image: <A HREF="phasediff.html"> Phase Image</A></p>
+
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    	<!-- iOS meta tags -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"/>
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" type="text/css" href="papaya.css?build=1449" />
+    	<script type="text/javascript" src="papaya.js?build=1449"></script>
+
+  		<title>Papaya Viewer</title>
+		<script type="text/javascript">
+			var params = {
+				encodedImages: ["T1w"],
+				"T1w": { min: 0.0, max: 873.1, lut: "Grayscale" },
+				encodedSurfaces: ["T1w_surf"],
+				surfaceLink: true,
+				worldSpace: true,
+				showOrientation: true,
+				showRuler: false,
+				radiological: false,
+				smoothDisplay: true,
+				showControls: true,
+				showControlBar: true,
+				combineParametric: false,
+				coordinate: [0.0, 7.0, 4.0],
+				orthogonalDynamic: true,
+				kioskMode: false,
+				expandable: false,
+				fullScreenPadding: true
+			};
+		</script>
+
+	</head>
+
+	<body>
+		<h3 style="text-align:center;font-family:sans-serif">T1w image</h3>
+		<div style="width:100%;margin:auto;text-align:center;"><div class="papaya" data-params="params"></div></div>
+		<p style="width:55%;margin:10px auto;text-align:center;font-family:sans-serif">1x1x1 mm voxels</p>
+	</body>
+</html>
