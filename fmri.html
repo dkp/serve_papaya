@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  	<!-- iOS meta tags -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"/>
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	  <style>html {font-family: Verdana, Geneva, Tahoma, sans-serif;}</style>
+
+	  <link rel="stylesheet" type="text/css" href="styles/papaya.css?build=1449" />
+  	<script type="text/javascript" src="scripts/papaya.js?build=1449"></script>
+
+		<title>Papaya Viewer</title>
+		<script type="text/javascript">
+      var params = {
+        "fmri.nii.gz": { min: 0.0, max: 1175.0, lut: "Grayscale" },
+        combineParametric: false,
+        coordinate: [-10.0, -50.0, 31.5],
+        expandable: false,
+        fullScreenPadding: false,
+        images: ["images/fmri.nii.gz"],
+        kioskMode: false,
+        orthogonalDynamic: true,
+        radiological: false,
+        showControlBar: true,
+        showControls: true,
+        showOrientation: true,
+        showRuler: false,
+        smoothDisplay: true,
+        worldSpace: true,
+      };
+		</script>
+
+	</head>
+
+	<body>
+		<h3 style="text-align:center;font-family:sans-serif">fMRI image: 4D with 177 volumes</h3>
+		<div style="width:100%;margin:auto;text-align:center;">
+			<div class="papaya" data-params="params"></div>
+		</div>
+		<p style="width:55%;margin:10px auto;text-align:center;font-family:sans-serif">2.5 x 2.5 x 3.5 mm voxels</p>
+	</body>
+</html>
