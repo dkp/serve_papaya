@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-	<head>
-  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-  	<!-- iOS meta tags -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"/>
-  	<meta name="apple-mobile-web-app-capable" content="yes">
-  	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	  <style>html {font-family: Verdana, Geneva, Tahoma, sans-serif;}</style>
+    <!-- iOS meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <style>html {font-family: Verdana, Geneva, Tahoma, sans-serif;}</style>
 
-	  <link rel="stylesheet" type="text/css" href="styles/papaya.css?build=1449" />
-  	<script type="text/javascript" src="scripts/papaya.js?build=1449"></script>
+    <link rel="stylesheet" type="text/css" href="styles/papaya.css?build=1449" />
+    <script type="text/javascript" src="scripts/papaya.js?build=1449"></script>
 
-		<title>Papaya Viewer</title>
-		<script type="text/javascript">
+    <title>Papaya Viewer</title>
+    <script type="text/javascript">
       var params = {
         "dwi.nii.gz": { min: 0.0, max: 400.0, lut: "Grayscale" },
         combineParametric: false,
@@ -32,15 +32,15 @@
         smoothDisplay: true,
         worldSpace: true,
       };
-		</script>
+    </script>
 
-	</head>
+  </head>
 
-	<body>
-		<h3 style="text-align:center;font-family:sans-serif">DWI image: 32 volumes</h3>
-		<div style="width:100%;margin:auto;text-align:center;">
-			<div class="papaya" data-params="params"></div>
-		</div>
-		<p style="width:55%;margin:10px auto;text-align:center;font-family:sans-serif">TR ~10 sec; 2 x 2 x 2 mm voxels; 1st and last image B=0, others B=1000</p>
-	</body>
+  <body>
+    <h3 style="text-align:center;font-family:sans-serif">DWI image: 32 volumes</h3>
+    <div style="width:100%;margin:auto;text-align:center;">
+      <div class="papaya" data-params="params"></div>
+    </div>
+    <p style="width:55%;margin:10px auto;text-align:center;font-family:sans-serif">TR ~10 sec; 2 x 2 x 2 mm voxels; 1st and last image B=0, others B=1000</p>
+  </body>
 </html>
