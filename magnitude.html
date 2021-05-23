@@ -16,13 +16,13 @@
     <title>Papaya Viewer</title>
     <script type="text/javascript">
       var params = {
-        "phasediff.nii.gz": { min: -4096.0, max: 4094.0, lut: "Grayscale" },
+        "magnitude.nii.gz": { min: 0.0, max: 1600.0, lut: "Grayscale" },
         combineParametric: false,
         coordinate: [0.0, -6.0, 29.399998664855957],
         expandable: false,
         fullScreenPadding: true,
-        images: ["images/phasediff.nii.gz"],
-        kioskMode: false,
+        images: ["images/magnitude.nii.gz"],
+        kioskMode: true,
         orthogonalDynamic: true,
         radiological: false,
         showControlBar: true,
@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <h3 style="text-align: center; font-family: sans-serif">Phasediff fieldmap Image</h3>
+    <h3 style="text-align: center; font-family: sans-serif">Magnitude fieldmap Image</h3>
     <div style="width: 100%; margin: auto; text-align: center">
       <div class="papaya" data-params="params"></div>
     </div>
